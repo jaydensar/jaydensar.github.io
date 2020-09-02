@@ -1,92 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+            integrity="sha256-Z2cxG4adb5Gvmprd32I57PsOUf8f63KpKiRNv6WhsGQ= sha384-smw4HdeWV/AvT5SOcDZlSS4WJqM/gsXRO731sSiMJp6h5Id9Y0sAYpLNtPG57vg4 sha512-y15Q2CIRJV34vHqJM95S64KyMk34o/jy+njIswzzPtWKbvzs8RTt6ecActJCDCfyBH27gAAc88xtp+rAnGm/rw=="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            nomodule=""
+            src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+            integrity="sha256-r2kkUWpWNvBLLZ3wN+8zqDzlPsxXCbtDyo3mQMt4jNo= sha384-ci2kdqk58PzPOZ+JQ395GmtevjTssApbrX8PcCvc5mdaopJTEEKTRmi8m1zWoo7A sha512-snixkOL/q31oaiZZDbRFUpDqEhlBoShc03rlNIikUqw928HD0ycWIk8C5M5x5o5ZaYBW+NSeXuFlHC3Tx0u1Tw=="
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY= sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T sha512-tDXPcamuZsWWd6OsKFyH6nAqh/MjZ/5Yk88T5o+aMfygqNFPan1pLyPFAndRzmOWHKT+jSDzWpJv8krj6x1LMA=="
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" integrity="sha384-Qou8HDEDzdKoXPIJGNN1LpCLw08rm2teL4elVhTYIi6zKmlDq2DV1NOLT36mJv9s" crossorigin="anonymous" />
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" integrity="sha384-Qou8HDEDzdKoXPIJGNN1LpCLw08rm2teL4elVhTYIi6zKmlDq2DV1NOLT36mJv9s" crossorigin="anonymous">
-
-    <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
+        <style>
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
             }
-            to {
-                opacity: 1;
+
+            html {
+                background: linear-gradient(to left top, red, blue) fixed;
             }
-        }
 
-        html {
-            background: linear-gradient(to left top, red, blue) fixed;
-        }
+            a:hover {
+                color: transparent;
+            }
 
-        a:hover {
-            color: transparent;
-        }
+            .icons {
+                line-height: 200px;
+                margin-top: -100px;
+                position: absolute;
+                text-align: center;
+                top: 45%;
+                width: 100%;
+                padding: 70px 0;
+            }
 
-        .icons {
-            line-height: 200px;
-            margin-top: -100px;
-            position: absolute;
-            text-align: center;
-            top: 45%;
-            width: 100%;
-            padding: 70px 0;
-        }
+            .icons ion-icon {
+                animation: fadeIn ease-in 1;
+                animation-duration: 1s;
+                font-size: 32px;
+                color: white;
+                margin: 0 20px;
+                transition: all 0.2s ease-in-out;
+            }
 
-        .icons ion-icon {
-            animation: fadeIn ease-in 1;
-            animation-duration: 1s;
-            font-size: 32px;
-            color: white;
-            margin: 0 20px;
-            transition: all .2s ease-in-out;
-        }
+            .icons ion-icon:hover {
+                transform: scale(1.3);
+            }
 
-        .icons ion-icon:hover {
-            transform: scale(1.3);
-        }
+            .h1,
+            h1 {
+                animation: fadeIn ease-in 1;
+                animation-fill-mode: forwards;
+                animation-duration: 1s;
+                color: white;
+                font-family: "Quicksand", sans-serif;
+                line-height: 200px;
+                margin-top: -100px;
+                position: absolute;
+                text-align: center;
+                top: 45%;
+                width: 100%;
+            }
+        </style>
+    </head>
 
-        .h1,
-        h1 {
-            animation: fadeIn ease-in 1;
-            animation-fill-mode: forwards;
-            animation-duration: 1s;
-            color: white;
-            font-family: 'Quicksand', sans-serif;
-            line-height: 200px;
-            margin-top: -100px;
-            position: absolute;
-            text-align: center;
-            top: 45%;
-            width: 100%;
-        }
-    </style>
-</head>
-
-<body>
-    <h1>jaydensar.net</h1>
-    <div class="icons">
-        <a href="https://twitter.com/jaydensar" title="Twitter">
-            <ion-icon name="logo-twitter"></ion-icon>
-        </a>
-        <a href="https://github.com/jaydensar" title="GitHub">
-            <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://reddit.com/u/jaydensar" title="Reddit">
-            <ion-icon name="logo-reddit"></ion-icon>
-        </a>
-        <a href="https://www.youtube.com/channel/UCKBsdbYm4RLcjbNpUnf09OA?view_as=subscriber" title="YouTube Channel">
-            <ion-icon name="logo-youtube"></ion-icon>
-        </a>
-        <a href="https://dsc.bio/jaydensar" title="Discord">
-            <ion-icon src="/u/assets/discord.svg?a=0"></ion-icon>
-        </a>
-        <a href="mailto:contact@jaydensar.net" title="E-mail">
-            <ion-icon name="mail"></ion-icon>
-        </a>
-    </div>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js" integrity="sha384-EpUpj2NxB3rTQFrIQWdTNZz2eUIjNWC341Ew4ZPPwhRnSPCIsT8gYkTo4kZHZVl/" crossorigin="anonymous"></script>
-</body>
-
+    <body>
+        <h1>jaydensar.net</h1>
+        <div class="icons">
+            <a href="https://twitter.com/jaydensar" title="Twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="https://github.com/jaydensar" title="GitHub">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://reddit.com/u/jaydensar" title="Reddit">
+                <ion-icon name="logo-reddit"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UCKBsdbYm4RLcjbNpUnf09OA?view_as=subscriber" title="YouTube Channel">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://dsc.bio/jaydensar" title="Discord">
+                <ion-icon src="/u/assets/discord.svg?a=0"></ion-icon>
+            </a>
+            <a href="mailto:contact@jaydensar.net" title="E-mail">
+                <ion-icon name="mail"></ion-icon>
+            </a>
+        </div>
+    </body>
 </html>
