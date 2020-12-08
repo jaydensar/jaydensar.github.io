@@ -2,7 +2,7 @@
 
 Before you ask; Why does this exist? I'll answer that for you.
 
-1. Catch-all email is a massive plus. (any string characters followed by `@jaydensar.net` is a valid email!)
+1. Catch-all email is a massive plus. (any string of characters followed by `@jaydensar.net` is a valid email!)
 
 2. I self-host various things. It is more convenient to have a valid SSL certificate instead of a self-signed one, and going to `jaydensar.net` instead of some random IP address that I'd have to remember.
 
